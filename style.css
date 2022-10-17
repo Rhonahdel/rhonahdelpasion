@@ -1,0 +1,146 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: comic sans ms;
+	color: #FFD6EC;
+	box-sizing: border-box;
+}
+h1, p{margin: 20px 0;}
+header, footer{
+	padding: 100px;
+	color: #FFD6EC;
+	text-align: center;
+	background: url(background.jpg);
+	background-size: cover;
+	font-size: 25px;
+}
+.navBar{
+	display: flex;
+	background: #FFA1CF;
+	position: sticky;
+	top: 0;
+}
+.navBar a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 15px 20px;
+	transition: 0.3s;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.navBar a:hover{
+	background: #FCDEC0;
+	color: #FFA1CF;
+}
+.mainContainer{
+	display: flex;
+}
+.sideContent{
+	flex: 25%;
+	padding: 15px;
+	background: #F96666;
+}
+.mainContent{
+	flex: 75%;
+	padding: 15px;
+	background: #FF9494;
+}
+
+.fakeImga{
+	padding: 15px;
+	color: white;
+	width: 200px;
+	height: 300px;
+	background-image: url(me.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 20px 0;
+	margin-left: 65px;
+}
+.fakeImgb{
+	padding: 15px;
+	color: white;
+	width: 200px;
+	height: 300px;
+	background-image: url(me1.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 20px 0;
+	margin-left: 65px;
+	margin-top: 20px;
+}
+.fakeImgc{
+	padding: 15px;
+	color: white;
+	width: 200px;
+	height: 300px;
+	background-image: url(me2.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.fakeImgd{
+	padding: 15px;
+	color: white;
+	width: 200px;
+	height: 200px;
+	background-image: url(me3.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 60px;
+}
+.fakeImge{
+	padding: 15px;
+	color: white;
+	width: 100%;
+	background-image: url(hobby.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 20px 0;
+}
+.fakeImgf{
+	padding: 15px;
+	color: white;
+	width: 100%;
+	background-image: url(fam.JPG);
+	background-size: cover;
+	margin: 20px 0;
+}
+.fakeImgg{
+	padding: 15px;
+	color: white;
+	width: 100%;
+	background-image: url(them.jpg);
+	background-size: cover;
+	margin: 20px 0;
+}
+.fake{
+	padding: 15px;
+	color: white;
+	width: 100%;
+	background-image: url(them2.jpg);
+	background-size: cover;
+	margin: 20px 0;
+	}
+.fake2{
+	padding: 15px;
+	color: white;
+	width: 100%;
+	background-image: url(rica.jpg);
+	background-size: cover;
+	margin: 20px 0;
+}
+.imgGlry{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 5px;
+}
+@media only screen and (max-width: 800px){
+	.navBar{flex-flow: column; position: static;}
+	.mainContainer{flex-flow: column;}
+	.imgGlry{grid-template-columns: auto;}
+}
